@@ -1,7 +1,7 @@
 nomes = ["primeiro", "segundo", "terceiro"]
 pontos = []
 
-for i in range(3):
+for i in range(len(nomes)):
     cesta = float(input(f"Digite o {nomes[i]} arremesso: "))
     if cesta == -1:
         pontos.append(1)
