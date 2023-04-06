@@ -1,7 +1,7 @@
 numeros = [] 
 nomes = ["primeiro", "segundo", "terceiro", "quarto", "quinto"]
 
-for i in range(5):
+for i in range(len(nomes)):
     num = int(input(f"Digite o {nomes[i]} inteiro: "))
     numeros.append(num)
 
