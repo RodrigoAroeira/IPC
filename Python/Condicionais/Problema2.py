@@ -8,6 +8,6 @@ if percent <= 1:
 elif percent <= 1.2:
     print("Infração Média")
 elif percent <= 1.5:
-    print ("Infração Grave")
+    print("Infração Grave")
 else:
     print("Infração Gravíssima")
