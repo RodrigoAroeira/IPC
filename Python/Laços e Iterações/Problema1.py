@@ -3,7 +3,12 @@ taxaA = float(input("Digite a taxa de crescimento da população da cidade A: ")
 popB = int(input("Digite a população da cidade B: "))
 taxaB = float(input("Digite a taxa de crescimento da população da cidade B: "))/100
 
-growA = popA * (1+taxaA)
-growB = popB * (1+taxaB)
+anos = 0
 
-print(f"{growB/growA}")
+while popA < popB:
+    popA += popA * taxaA
+    popB += popB * taxaB
+    anos += 1
+    
+    
+print(f"{anos}")

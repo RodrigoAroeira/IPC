@@ -5,10 +5,8 @@ while True:
     x = (int(input("Digite um número: ")))
     if x % 2 == 0 and x > 0:
         par.append(x)
-        continue
-    elif x % 2 != 0 and x > 0:
+    elif x % 2 == 1 and x > 0:
         odd.append(x)
-        continue
     else:
         break
 
