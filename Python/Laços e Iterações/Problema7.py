@@ -6,3 +6,5 @@ for i in range(1, num):
        div.append(i)
 
 print("Resultado:", sum(div))
+
+haha
