@@ -9,6 +9,4 @@ while popA < popB:
     popA += popA * taxaA
     popB += popB * taxaB
     anos += 1
-    
-    
 print(f"{anos}")
