@@ -2,7 +2,7 @@ def mdc(n, m):
     nums = [n, m]
     nums.sort()
     divs = []
-    for i in range(1, max(nums)):
+    for i in range(1, max(nums)+1):
         if n % i == 0 and m % i == 0:
             divs.append(i)
     return max(divs)
