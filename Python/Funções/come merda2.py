@@ -8,6 +8,6 @@ def come_merda():
         else:
             continue
 
-input ("Pressione enter para sofrer.")
+input ("Pressione enter.")
 come_merda()
 
