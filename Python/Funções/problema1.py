@@ -8,8 +8,3 @@ def pagamento(salario):
     else:
         novo = salario * 1.05
     return novo
-
-
-# salario = float(input("Digite o valor do salário: "))
-
-# print(pagamento(salario))
