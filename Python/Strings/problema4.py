@@ -1,4 +1,1 @@
-nome = input()
-
-for char in nome:
-    print(char)
+[print(char) for char in input()]
