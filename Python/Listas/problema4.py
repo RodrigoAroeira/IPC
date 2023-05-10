@@ -5,14 +5,9 @@ lista =[]
 for i in range(12):
     lista.append(float(input()))
 
-print(lista)
-lista.sort()
-print(lista)
 
 print(f"Média: {avg(lista):.2f}")
 
-x = len(lista)//2
-
-for i in lista[x:]:
+for i in lista:
     if i > avg(lista):
-        print(i)
+        print(int(i))
