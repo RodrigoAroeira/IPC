@@ -21,6 +21,3 @@ def cifra_cesar(palavra, chave): #método 2
         criptografado += nova_letra
     print("Resultado:", criptografado)
 cifra_cesar(palavra, chave)
-
-
-

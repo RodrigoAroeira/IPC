@@ -27,9 +27,9 @@
 # print(repeatedChar('Aaararraa'))
 
 str = [*input()]
+
 for i in range(len(str)-1):
-    if str[i].lower() == str[i+1].lower():
+    if str[i] == str[i+1]:
         str[i+1] = str[i+1].upper()
         str[i] = ''
 print(''.join(str))
-
