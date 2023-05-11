@@ -1,3 +1,2 @@
 nome = input()
-for char in range(len(nome)+1):
-    print(nome[:char])
+[print(nome[:char]) for char in range(len(nome)+1)]
