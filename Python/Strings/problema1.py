@@ -1,6 +1,4 @@
-nome = input()
-
-nome = nome.split()
+nome = input().split()
 sobrenome = nome[-1]
 nome = nome[0:-1]
 nome = " ".join(nome)

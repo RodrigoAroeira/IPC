@@ -2,9 +2,10 @@ def avg(lista):
     return sum(lista)/len(lista)
 
 lista =[]
-for i in range(12):
-    lista.append(float(input()))
+# for i in range(12):
+#     lista.append(float(input()))
 
+[lista.append(float(input())) for i in range(12)]
 
 print(f"Média: {avg(lista):.2f}")
 
