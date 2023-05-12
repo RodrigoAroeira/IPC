@@ -6,4 +6,4 @@ vfinal = v0 + acel*tempo
 dist = v0*tempo + 1/2*acel*tempo**2
 
 print(f"Velocidade final: {vfinal:.2f}")
-print(f"Distância percorrida: {dist:.2f}")
+print(f"Distância percorrida: {dist:.2f}") 
