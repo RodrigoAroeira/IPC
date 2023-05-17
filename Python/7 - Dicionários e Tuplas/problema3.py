@@ -6,7 +6,8 @@ while True:
     if nome == '':
         break
     nota = input().split()
-    alunos[nome] = alunos.get(nome, sum([float(i) for i in nota]) / len(nota))
+    med = sum([float(i) for i in nota]) / len(nota)
+    alunos[nome] = alunos.get(nome, med)
 
 alunos = sorted(alunos.items(), key = itemgetter(1), reverse = True)
 
