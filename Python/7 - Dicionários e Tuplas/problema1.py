@@ -7,4 +7,3 @@ for letra in palavra:
 maior = max(letras, key = letras.get)
 
 print(maior)
-
