@@ -1,10 +1,10 @@
 def nested_sum(lista, l=[]):
     if lista:
-        for i in lista:
-            if type(i) == list:
-                nested_sum(i, l)
+        for item in lista:
+            if type(item) == list:
+                nested_sum(item, l)
             else:
-                l.append(i)
+                l.append(item)
         return sum(l)
     else:
         return 0
