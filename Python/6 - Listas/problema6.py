@@ -6,5 +6,10 @@
     
 
 def tamanho_maior_string(lista):
-    listalen = [len(i) for i in lista]
-    return max(listalen) if lista != [] else 0
+    return max(map(len,lista))
+    # listalen = [len(i) for i in lista]
+    # return max(listalen) if lista else 0
+
+lista = ['asdasd', 'sdadsadas', 'asda']
+
+print(tamanho_maior_string(lista))
