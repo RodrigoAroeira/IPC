@@ -1,5 +1,2 @@
 def esta_ordenada(lista):
-    if lista == sorted(lista):
-        return True
-    else: 
-        return False
+    return True if lista == sorted(lista) else False
