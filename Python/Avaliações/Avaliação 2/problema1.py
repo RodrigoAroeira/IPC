@@ -33,8 +33,8 @@ def compactar_strings(string1, string2, compactado = []):
     return compactado
 
 def intercalar_strings(string1, string2, intercalado = ''):
-    compactado = compactar_strings(string1, string2)
-    for i in range(len(compactado)//2):
+    compactado = compactar_strings(string1, string2, []) # importante colocar a lista vazia, se não, o compactado vai ficar com os valores anteriores
+    for i in range(len(compactado)):
         intercalado += compactado[i][0] + compactado[i][1]
     return intercalado
 
