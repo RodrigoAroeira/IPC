@@ -22,21 +22,6 @@ def intercalar_strings(string1, string2, intercalado = ''):
         intercalado += compactado[i][0] + compactado[i][1]
     return intercalado
 
-
-    # if len(string1) > len(string2):
-    #     for i in range(len(string1)):
-    #         if i < len(string2):
-    #             intercalado += string1[i] + string2[i]
-    #         else:
-    #             intercalado += string1[i]
-    # else:
-    #     for i in range(len(string2)):
-    #         if i < len(string1):
-    #             intercalado += string1[i] + string2[i]
-    #         else:
-    #             intercalado += string2[i]
-    # return intercalado
-
 print(compactar_strings("Tpo", "oCder"))
 print(intercalar_strings("Tpo", "oCder")) # output deve ser TopCoder
 
