@@ -1,4 +1,6 @@
 # encontra a data mais recente em um arquivo de datas
+monthlen = [31,28,31,30,31,30,31,31,30,31,30,31]
+
 with open(r"C:\Users\Rodrigo\OneDrive - Universidade Federal de Minas Gerais\Documentos\Programação\IPC\Python\8 - Arquivos\datas.txt", "r") as arquivo:
     maior_dia = md =   0
     maior_mes = mmes = 0
