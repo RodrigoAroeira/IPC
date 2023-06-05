@@ -24,3 +24,7 @@ with open(r"C:\Users\Rodrigo\OneDrive - Universidade Federal de Minas Gerais\Doc
     
     print("/".join([md, mmes, my]))
 
+with open(r"C:\Users\Rodrigo\OneDrive - Universidade Federal de Minas Gerais\Documentos\Programação\IPC\Python\8 - Arquivos\datas.txt", "r") as arquivo:
+    dates = [line.strip().split("/") for line in arquivo]
+    most_recent = max(dates, key=lambda date: (int(date[2]), int(date[1]), int(date[0])))
+    print("/".join(most_recent))
