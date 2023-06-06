@@ -3,7 +3,7 @@ palavra = input()
 
 for letra in palavra:
     for vogal in 'aeiou':
-        if letra == vogal:
+        if letra.lower() == vogal.lower():
             if letra not in letras:
                 letras[letra] = 1
             else:
