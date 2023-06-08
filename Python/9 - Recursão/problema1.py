@@ -9,3 +9,4 @@ def soma(m, n):
     elif n > m:
         return m + soma(m+1, n)
     
+print(soma(int(input()), int(input())))
