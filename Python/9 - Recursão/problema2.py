@@ -13,3 +13,6 @@ def power2(k, n):
         for i in range(n):
             resultado *= k
         return resultado
+    
+n = int(input()); m = int(input())
+print(power(n,m))
