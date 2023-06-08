@@ -1,7 +1,10 @@
 def power(k, n):
-    #nao usar ** ou pow ou power
+    # recursivo
+    #nao usar ** ou pow
     if n == 0:
         return 1
+    elif n == 1:
+        return k
     else: 
         return k * power(k, n-1)
     
