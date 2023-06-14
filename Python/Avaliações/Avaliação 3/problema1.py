@@ -3,7 +3,7 @@ def tamanho_medio_palavras(path):
         text = arquivo.read()
         #tirar simbolos
         simbolos = r"!@#$%¨&*()_+{}^:<>?/.,;~´`[]-='"
-        palavras = text.split()
+        palavras = text.strip().split() 
         palavras_processadas = []
         for palavra in palavras:
             for simbolo in simbolos:
