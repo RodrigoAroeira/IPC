@@ -10,3 +10,5 @@ def incluir_aluno(path, nome, listanotas):
         for aluno, notas in alunos.items():
             for av1, av2, av3, av4 in notas:
             arquivo.write(f'{aluno},{av1},{av2},{av3},{av4}\n')
+
+
