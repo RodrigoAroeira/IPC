@@ -1,5 +1,5 @@
 def remover_duplicados(tupla):
-    tupla = list(map(int, tupla))
+    tupla = tuple(map(int, tupla))
     lista = []
     for i in tupla:
         if i not in lista:
