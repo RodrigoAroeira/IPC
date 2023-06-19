@@ -13,3 +13,5 @@ def busca_binaria(lista, elemento):
         lista.remove(lista[meio])
         return busca_binaria(lista, elemento)
 
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(busca_binaria(lista, 9))
