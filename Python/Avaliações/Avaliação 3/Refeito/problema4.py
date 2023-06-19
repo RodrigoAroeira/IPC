@@ -1,3 +1,5 @@
+import random
+
 def busca_binaria(lista, elemento):
     meio = len(lista) // 2
     if elemento not in lista:
@@ -11,6 +13,6 @@ def busca_binaria(lista, elemento):
     if lista[meio] > elemento:
         nova = lista[:meio]
     return busca_binaria(nova, elemento)
-
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(busca_binaria(lista, 6))
+elemento = random.randint(1, 20); print(elemento)
+print(busca_binaria(lista, elemento))
