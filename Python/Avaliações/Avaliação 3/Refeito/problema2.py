@@ -7,17 +7,19 @@ def incluir_aluno(path, nome, listanotas, var=0):
         av1, av2, av3, av4 = listanotas    
     with open(path, 'a') as arquivo:
         if var == 1:
-            arquivo.truncate(0)
+            arquivo.truncate(0) # limpar arquivo para motivos de teste
             arquivo.close()
         try:
             for aluno, _ in alunos.items():
                 arquivo.write(f'{aluno},{av1},{av2},{av3},{av4}\n')
-        except: 
-            from os import system as s; s('cls')
+        except ValueError:
+            from os import system as s; s('cls') # limpar terminal do windows
             exit()
     return True
 
-var = 1
-
+caminho = 'C:\\Users\\Rodrigo\\OneDrive - Universidade Federal de Minas Gerais\
+\\Documentos\\Programação\\IPC\\Python\\Avaliações\\Avaliação 3\\Refeito\\notas.txt'
+nome = 'Fezes'
 notas = [0, 0, 10, 25]
-print(incluir_aluno(r"C:\Users\Rodrigo\OneDrive - Universidade Federal de Minas Gerais\Documentos\Programação\IPC\Python\Avaliações\Avaliação 3\Refeito\notas.txt", "Fezes", notas, var))
+var = 0
+print(incluir_aluno(caminho, nome, notas, var))

@@ -1,7 +1,7 @@
 import random
 
 def busca_binaria(lista, elemento):
-    meio = len(lista) // 2
+    meio = len(lista) // 2; nova = None
     if elemento not in lista:
         return False
     if len(lista) == 0:
