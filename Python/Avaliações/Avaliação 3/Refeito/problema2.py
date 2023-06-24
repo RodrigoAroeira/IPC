@@ -14,12 +14,12 @@ def incluir_aluno(path, nome, listanotas, var=0):
                 arquivo.write(f'{aluno},{av1},{av2},{av3},{av4}\n')
         except ValueError:
             from os import system as s; s('cls') # limpar terminal do windows
-            exit()
+            print('Arquivo limpo.'); exit()
     return True
 
 caminho = 'C:\\Users\\Rodrigo\\OneDrive - Universidade Federal de Minas Gerais\
 \\Documentos\\Programação\\IPC\\Python\\Avaliações\\Avaliação 3\\Refeito\\notas.txt'
 nome = 'Fezes'
 notas = [0, 0, 10, 25]
-var = 0
+var = 1
 print(incluir_aluno(caminho, nome, notas, var))
