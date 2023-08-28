@@ -19,3 +19,5 @@ def power2(k, n):
 
 n = int(input()); m = int(input())
 print(power(n,m))
+
+#fezes 33
